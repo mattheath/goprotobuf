@@ -1,3 +1,7 @@
+__This is a slightly modified version of the original library
+with a patch from @mattoddie that fixes Go import paths (removing
+duplicate module imports).__
+
 Go support for Protocol Buffers - Google's data interchange format
 Copyright 2010 The Go Authors.
 https://github.com/golang/protobuf
@@ -33,7 +37,7 @@ To install this code:
 The simplest way is to run go get.
 
 	# Grab the code from the repository and install the proto package.
-	go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+	go get -u github.com/mattheath/goprotobuf/{proto,protoc-gen-go}
 
 The compiler plugin, protoc-gen-go, will be installed in $GOBIN,
 defaulting to $GOPATH/bin.  It must be in your $PATH for the protocol
